@@ -10,9 +10,9 @@ set -e
 cd "$(dirname "$0")"
 source 'ci-library.sh'
 mkdir artifacts
-git_config user.email 'ci@msys2.org'
-git_config user.name  'MSYS2 Continuous Integration'
-git remote add upstream 'https://github.com/MSYS2/MINGW-packages'
+git_config user.email 'mingwandroid@gmail.com'
+git_config user.name  'Ray Donnelly'
+git remote add upstream 'https://github.com/dyne/frei0r'
 git fetch --quiet upstream
 # So that makepkg auto-fetches keys from validpgpkeys
 mkdir -p ~/.gnupg && echo -e "keyserver keyserver.ubuntu.com\nkeyserver-options auto-key-retrieve" > ~/.gnupg/gpg.conf
